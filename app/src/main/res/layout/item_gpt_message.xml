@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/gptMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_history"
+        android:drawableLeft="@drawable/baseline_laptop_mac_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="center|start"
+        android:padding="8dp"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <ImageView
+        android:id="@+id/imgListen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:contentDescription="@string/listen"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gptMessageTextView"
+        app:layout_constraintTop_toBottomOf="@+id/gptMessageTextView"
+        app:srcCompat="@drawable/baseline_volume_up_24" />
+
+    <ImageView
+        android:id="@+id/imgCopy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:contentDescription="@string/copy"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgListen"
+        app:layout_constraintStart_toEndOf="@+id/imgListen"
+        app:layout_constraintTop_toTopOf="@+id/imgListen"
+        app:srcCompat="@drawable/baseline_content_copy_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

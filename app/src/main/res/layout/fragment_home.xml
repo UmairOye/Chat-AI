@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ui.chunks.Home">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_43sdp"
+        android:background="@color/toolbar_Color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:includeFontPadding="false"
+            android:text="@string/chat_ai"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/drawable_cg"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/history_1"
+        android:textColor="@color/app_theme_color"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/topCard"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/bg_history"
+            android:layout_height="@dimen/_55sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/tvQuery"
+                android:scrollHorizontally="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="@string/chat_history"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/poppins_semibold"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/_10ssp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/tvQueryAnswer"
+                android:scrollHorizontally="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="@string/chat_history_will_be_appeared_here"
+                android:textColor="@color/text_color"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/_8ssp"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/cardView"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/topCard"
+            app:layout_constraintStart_toStartOf="@id/topCard"
+            app:layout_constraintTop_toBottomOf="@id/topCard"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_history"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_not_listed_location_24"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/app_theme_color"
+                android:fontFamily="@font/poppins"
+                android:includeFontPadding="false"
+                android:text="@string/you_can_start_a_quick_start_chat_to_ask_about_creative_professional_and_academic_ideas_ask_to_know_powered_by_chatgpt"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_10ssp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/btnQuickChat"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:backgroundTint="@color/app_theme_color"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="@string/quick_chat"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/popular_suggestions"
+        android:textColor="@color/app_theme_color"
+        android:textSize="@dimen/_8ssp"
+        android:textStyle="italic"
+        android:id="@+id/popular"
+        app:layout_constraintStart_toStartOf="@id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/topCard"
+        app:layout_constraintStart_toStartOf="@id/topCard"
+        app:layout_constraintTop_toBottomOf="@id/popular">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_history"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_assistant_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableTint="@color/app_theme_color"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/assistance"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/birthdayLetter"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/write_me_a_birthday_letter"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/socialMediaPost"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/write_a_social_media_post_about_something"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:id="@+id/jobLetter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/write_me_a_job_letter"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_history"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_precision_manufacturing_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableTint="@color/app_theme_color"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/math_english_and_science"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/completedMath"
+                    android:text="@string/completed_mathematical_explanations"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/letsLearnEnglish"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/let_s_learn_english"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scienceAndScientificHub"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/science_and_scientific_hub"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_history"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_business_center_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableTint="@color/app_theme_color"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/business"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/attractCustomers"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/how_do_i_attract_customers"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/growBusiness"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/how_do_i_grow_my_business"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mostDemandedSkills"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/what_are_the_most_demanded_skills"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_history"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_directions_walk_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableTint="@color/app_theme_color"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/exercises"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lostWeight"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/how_do_i_lose_weight"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tallerQuickly"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/what_to_eat_to_grow_more_taller_quickly"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/moreMuscles"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/what_should_i_do_to_gain_more_muscle"
+                    android:textSize="@dimen/_9ssp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@color/drawable_cg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gainMoreWeight"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/what_should_i_do_to_gain_more_weight"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_history"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/baseline_translate_24"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableTint="@color/app_theme_color"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/translator"
+                    android:textColor="@color/heading_color"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/translator"
+                    android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/translate_languages"
+                    android:textSize="@dimen/_9ssp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

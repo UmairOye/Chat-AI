@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.chatgptopensource.ui.chunks.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_chatScreen"
+            app:destination="@id/chatScreen" />
+        <action
+            android:id="@+id/action_home2_to_history2"
+            app:destination="@id/history2" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatScreen"
+        android:name="com.example.chatgptopensource.ui.chunks.ChatScreen"
+        android:label="fragment_chat_screen"
+        tools:layout="@layout/fragment_chat_screen" />
+    <fragment
+        android:id="@+id/history2"
+        android:name="com.example.chatgptopensource.ui.chunks.History"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

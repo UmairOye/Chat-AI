@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="status_bar_color">#2C2B2B</color>
+    <color name="app_theme_color">#05988A</color>
+    <color name="background_color">#2C2B2B</color>
+    <color name="toolbar_Color">#2C2B2B</color>
+    <color name="drawable_color">#2C2B2B</color>
+    <color name="text_color">#fff</color>
+    <color name="editext_bg_color">#2C2B2B</color>
+    <color name="drawable_cg">#333333</color>
+    <color name="heading_color">#05988A</color>
+
+</resources>
