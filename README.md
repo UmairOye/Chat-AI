@@ -22,3 +22,15 @@ Clone the repository to your local machine:
  ```bash
    git clone https://github.com/UmairOye/Chat-AI
    ```
+
+## Using the App
+
+- Interact with the chat interface by typing your messages and pressing enter.
+- Toggle between light and dark modes using the theme switcher.
+- Click the copy icon to copy GPT's response.
+- Click the speaker icon to listen to GPT's response.
+- View your chat history by clicking the "View History" button.
+- Explore the recommended questions for different categories.
+
+
+
