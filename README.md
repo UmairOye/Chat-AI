@@ -33,4 +33,5 @@ Clone the repository to your local machine:
 - Explore the recommended questions for different categories.
 
 
-
+## Don't Forget to Star ⭐
+If you found this project useful or had fun exploring it, please consider giving it a star. It's a great way to show your appreciation and it puts a smile on my face! 😊🌟
