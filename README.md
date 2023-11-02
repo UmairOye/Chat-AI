@@ -1,6 +1,6 @@
 # Chat-AI
 
-This is a simple chat application powered by OpenAI's GPT-3 API. It allows users to have interactive conversations with the GPT model in both light and dark modes. Additionally, users can copy the GPT response, listen to it, and review the chat history. The app also provides suggested questions for various categories like business, assistance, math, English, science, exercise, translator, and more.
+This is a simple chat application powered by OpenAI's GPT-3.5 turbo API. It allows users to have interactive conversations with the GPT model in both light and dark modes. Additionally, users can copy the GPT response, listen to it, and review the chat history. The app also provides suggested questions for various categories like business, assistance, math, English, science, exercise, translator, and more.
 
 ## Screenshots
 
